@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:calc1/my_styles/my_styles.dart';
 import 'package:math_expressions/math_expressions.dart';
