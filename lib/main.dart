@@ -165,8 +165,8 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                    height: 350,
-                    width: 290,
+                    height: 300,
+                    width: 280,
                     child: Column(
                       children: [
                         // third row
@@ -276,9 +276,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     )),
                 SizedBox(width: 5),
                 Container(
-                  padding: EdgeInsets.only(bottom: 50),
-                  height: 350,
-                  width: 90,
+                  height: 290,
+                  width: 80,
                   child: ElevatedButton(
                     child: Text(
                       "=",
