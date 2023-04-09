@@ -80,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(fontSize: 100, color: Colors.white),
               ),
             ),
+            // first row
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               ElevatedButton(
                   onPressed: () {
@@ -118,6 +119,176 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: whiteBtnTxt(),
                   )),
             ]),
+            SizedBox(height: 10),
+            // second row
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              ElevatedButton(
+                  onPressed: () {
+                    _change("0");
+                  },
+                  style: tButton(),
+                  child: Text(
+                    "0",
+                    style: whiteBtnTxt(),
+                  )),
+              ElevatedButton(
+                  onPressed: () {
+                    _change("1");
+                  },
+                  style: tButton(),
+                  child: Text(
+                    "1",
+                    style: whiteBtnTxt(),
+                  )),
+              ElevatedButton(
+                  onPressed: () {
+                    _change("1");
+                  },
+                  style: tButton(),
+                  child: Text(
+                    "1",
+                    style: whiteBtnTxt(),
+                  )),
+              ElevatedButton(
+                  onPressed: () {
+                    _change("1");
+                  },
+                  style: diffButton(),
+                  child: Text(
+                    "1",
+                    style: whiteBtnTxt(),
+                  )),
+            ]),
+            SizedBox(height: 10),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Container(
+                    height: 350,
+                    width: 290,
+                    child: Column(
+                      children: [
+                        // third row
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("0");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "0",
+                                    style: whiteBtnTxt(),
+                                  )),
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("1");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "1",
+                                    style: whiteBtnTxt(),
+                                  )),
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("1");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "1",
+                                    style: whiteBtnTxt(),
+                                  )),
+                            ]),
+                        // fourth row
+                        SizedBox(height: 10),
+
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("0");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "0",
+                                    style: whiteBtnTxt(),
+                                  )),
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("1");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "1",
+                                    style: whiteBtnTxt(),
+                                  )),
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("1");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "1",
+                                    style: whiteBtnTxt(),
+                                  )),
+                            ]),
+                        // fifth row
+                        SizedBox(height: 10),
+
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("0");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "0",
+                                    style: whiteBtnTxt(),
+                                  )),
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("1");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "1",
+                                    style: whiteBtnTxt(),
+                                  )),
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _change("1");
+                                  },
+                                  style: tButton(),
+                                  child: Text(
+                                    "1",
+                                    style: whiteBtnTxt(),
+                                  )),
+                            ]),
+                      ],
+                    )),
+                SizedBox(width: 5, height: 1),
+                Container(
+                  height: 350,
+                  width: 90,
+                  child: ElevatedButton(
+                    child: Text("heelo"),
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: StadiumBorder(),
+                      backgroundColor: Color.fromRGBO(91, 125, 162, 1),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
