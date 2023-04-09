@@ -68,39 +68,53 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0.0,
       ),
       body: Container(
+        padding: EdgeInsets.all(10),
         color: Color.fromARGB(255, 12, 36, 62),
         child: Column(
           children: [
-            Text(
-              "$inpt",
-              style: TextStyle(fontSize: 40, color: Colors.white),
+            Container(
+              height: 200,
+              alignment: Alignment.bottomRight,
+              child: Text(
+                "$inpt",
+                style: TextStyle(fontSize: 100, color: Colors.white),
+              ),
             ),
-            Row(children: [
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              ElevatedButton(
+                  onPressed: () {
+                    _change("0");
+                  },
+                  style: diffButton(),
+                  child: Text(
+                    "0",
+                    style: whiteBtnTxt(),
+                  )),
               ElevatedButton(
                   onPressed: () {
                     _change("1");
                   },
-                  style: myStyle(),
+                  style: diffButton(),
                   child: Text(
                     "1",
                     style: whiteBtnTxt(),
                   )),
               ElevatedButton(
                   onPressed: () {
-                    _change("DEL");
+                    _change("1");
                   },
-                  style: myStyle(),
+                  style: diffButton(),
                   child: Text(
-                    "+",
+                    "1",
                     style: whiteBtnTxt(),
                   )),
               ElevatedButton(
                   onPressed: () {
-                    _change("=");
+                    _change("1");
                   },
-                  style: myStyle(),
+                  style: diffButton(),
                   child: Text(
-                    "=",
+                    "1",
                     style: whiteBtnTxt(),
                   )),
             ]),

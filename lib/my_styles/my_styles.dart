@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
-ButtonStyle myStyle() {
+ButtonStyle tButton() {
   return ElevatedButton.styleFrom(
       shape: CircleBorder(),
       minimumSize: Size(90, 90),
       backgroundColor: Colors.transparent);
+}
+
+ButtonStyle diffButton() {
+  return ElevatedButton.styleFrom(
+      shape: CircleBorder(),
+      minimumSize: Size(90, 90),
+      backgroundColor: Color.fromRGBO(91, 125, 162, 1));
 }
 
 TextStyle whiteBtnTxt() {
