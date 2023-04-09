@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: whiteBtnTxt(),
                   )),
             ]),
-            SizedBox(height: 10),
+            SizedBox(height: 15),
             // second row
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               ElevatedButton(
@@ -159,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: whiteBtnTxt(),
                   )),
             ]),
-            SizedBox(height: 10),
+            SizedBox(height: 15),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -203,7 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   )),
                             ]),
                         // fourth row
-                        SizedBox(height: 10),
+                        SizedBox(height: 15),
 
                         Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -238,7 +238,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   )),
                             ]),
                         // fifth row
-                        SizedBox(height: 10),
+                        SizedBox(height: 15),
 
                         Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -246,13 +246,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             children: [
                               ElevatedButton(
                                   onPressed: () {
-                                    _change("0");
+                                    _clr();
                                   },
-                                  style: tButton(),
-                                  child: Text(
-                                    "0",
-                                    style: whiteBtnTxt(),
-                                  )),
+                                  style: ElevatedButton.styleFrom(
+                                      shape: CircleBorder(),
+                                      minimumSize: Size(90, 90),
+                                      backgroundColor: Colors.red),
+                                  child: Text("AC", style: whiteBtnTxt())),
                               ElevatedButton(
                                   onPressed: () {
                                     _change("1");
@@ -274,12 +274,16 @@ class _MyHomePageState extends State<MyHomePage> {
                             ]),
                       ],
                     )),
-                SizedBox(width: 5, height: 1),
+                SizedBox(width: 5),
                 Container(
+                  padding: EdgeInsets.only(bottom: 50),
                   height: 350,
                   width: 90,
                   child: ElevatedButton(
-                    child: Text("heelo"),
+                    child: Text(
+                      "=",
+                      style: TextStyle(fontSize: 50),
+                    ),
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       shape: StadiumBorder(),
